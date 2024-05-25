@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cbc6eb1-deb2-4dac-a897-1c1bee055ae6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework_VojtaK._2_v2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Guest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/hotel/ListOfBookings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Room.java" afterDir="false" />
+    <list default="true" id="0cbc6eb1-deb2-4dac-a897-1c1bee055ae6" name="Changes" comment="Přepracovaný domácí úkol číslo 2&#10;&#10;Rozhodl jsem se přepracovat úkol číslo dva tak, abych si osvěžil problematiku.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/ListOfBookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/BookingManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wojtaaa1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wojtaaa1/homework_VojtaK._2_v2.git&quot;,
+    &quot;accountId&quot;: &quot;38e0a975-aa29-4c81-84d1-8f2a6e91d8d8&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ggyPiLAEzHXtv0W1SipJpsbW09" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,7 +51,8 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/vojtechklimenta/Developer/#Homework/homework_VojtaK._3"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -58,6 +64,27 @@
       <option name="presentableId" value="Default" />
       <updated>1716133492764</updated>
     </task>
+    <task id="LOCAL-00001" summary="Přepracovaný domácí úkol číslo 2&#10;&#10;Rozhodl jsem se přepracovat úkol číslo dva tak, abych si osvěžil problematiku.">
+      <option name="closed" value="true" />
+      <created>1716141897730</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716141897730</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Přepracovaný domácí úkol číslo 2&#10;&#10;Rozhodl jsem se přepracovat úkol číslo dva tak, abych si osvěžil problematiku.">
+      <option name="closed" value="true" />
+      <created>1716141979559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716141979559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Přepracovaný domácí úkol číslo 2&#10;&#10;Rozhodl jsem se přepracovat úkol číslo dva tak, abych si osvěžil problematiku." />
+    <option name="LAST_COMMIT_MESSAGE" value="Přepracovaný domácí úkol číslo 2&#10;&#10;Rozhodl jsem se přepracovat úkol číslo dva tak, abych si osvěžil problematiku." />
   </component>
 </project>

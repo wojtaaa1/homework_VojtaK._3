@@ -1,6 +1,9 @@
 package com.engeto.hotel;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -111,4 +114,42 @@ public class Booking {
         result += "\n";
         return result;
     }
+
+    public int getNumberOfGuests(){
+        return otherGuests.size() + 1;
+    }
+
+    public String getBookingSummaryFormatted(){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d. M. yyyy");
+        String formattedStartDate = formatter.format(startDate);
+        String formattedEndDate = formatter.format(endDate);
+        String formattedBirthDate = formatter.format(mainGuest.getBirthDate());
+
+        String seaView;
+        if (room.isHasSeaView()) {
+            seaView = "ano";
+        } else {
+            seaView = "ne";
+        }
+
+        int totalGuest = getNumberOfGuests();
+
+        String summary = formattedStartDate + " až " + formattedEndDate + ": " + mainGuest.getFirstName() + " ";
+        summary += mainGuest.getLastName() + " " + "("+ formattedBirthDate + ")";
+        summary += " [" + totalGuest + ", " + seaView + "]" + " za " + room.getPricePerNight() + " Kč";
+
+        return summary;
+    }
+
+    public long getBookingLength() {
+        return ChronoUnit.DAYS.between(startDate, endDate);
+    }
+
+    public BigDecimal getPrice (){
+        int numberOfNights = (int) getBookingLength();
+        BigDecimal pricePerNight = room.getPricePerNight();
+        BigDecimal totalPrice = pricePerNight.multiply(BigDecimal.valueOf(numberOfNights));
+        return totalPrice;
+    }
+
 }
