@@ -4,14 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookingManager {
-    public List<Booking> getBookings() {
-        return bookings;
-    }
+
 
     private final List<Booking> bookings;
 
     public BookingManager(List<Booking> bookings) {
         this.bookings = new ArrayList<>(bookings);
+    }
+
+    public List<Booking> getBookings() {
+        return new ArrayList<>(bookings);
     }
 
     public void addBooking(Booking newBooking) {
@@ -44,7 +46,7 @@ public class BookingManager {
     public int getNumberOfWorkingBookings() {
         int count = 0;
         for (Booking booking : bookings) {
-            if (!booking.isTypeOfVacation()) {
+            if (!booking.isBookingIsRecreational()) {
                 count++;
             }
         }
@@ -52,6 +54,10 @@ public class BookingManager {
     }
 
     public double getAverageGuests() {
+        if (bookings.isEmpty()) {
+            return 0.0;  // nebo můžete zvolit jinou vhodnou hodnotu nebo vyhodit výjimku
+        }
+
         double sum = 0;
         for (Booking booking : bookings) {
             sum += booking.getNumberOfGuests();

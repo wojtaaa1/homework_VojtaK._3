@@ -16,7 +16,7 @@ public class Main {
         fillBookings(listOfBookings);
         printGuestStatistics(listOfBookings);
         printAllBookings(listOfBookings);
-        printRecreationalBookings(listOfBookings, 8);
+        printRecreationalBookings(listOfBookings, 1);
         callMethods(listOfBookings);
 
 
@@ -91,16 +91,16 @@ public class Main {
         System.out.println("Celkový počet rezervací s více než dvěma hosty: " + moreThanTwoGuestsBookings);
     }
 
-    private static void printRecreationalBookings(BookingManager listOfBookings, int n) {
+    private static void printRecreationalBookings(BookingManager listOfBookings, int numberOfBookingsToPrint) {
         int count = 0;
-        System.out.println("Prvních " + n + " rezervací pro rekreační pobyty:");
+        System.out.println("Prvních " + numberOfBookingsToPrint + " rezervací pro rekreační pobyty:");
         for (Booking booking : listOfBookings.getBookings()) {
-            if (!booking.isTypeOfVacation()) {
+            if (!booking.isBookingIsRecreational()) {
                 continue;
             }
             System.out.println(booking.getBookingSummaryFormatted());
             count++;
-            if (count == n) {
+            if (count == numberOfBookingsToPrint) {
                 break;
             }
         }

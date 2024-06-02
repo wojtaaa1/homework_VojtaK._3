@@ -13,7 +13,7 @@ public class Booking {
     private List<Guest> otherGuests;
     private LocalDate startDate;
     private LocalDate endDate;
-    private boolean typeOfVacation; // true = rekreační, false = pracovní
+    private boolean bookingIsRecreational; // true = rekreační, false = pracovní
 
     public Booking(Room room, Guest mainGuest, List<Guest> otherGuests, LocalDate startDate, LocalDate endDate, boolean typeOfVacation) {
         if (mainGuest == null) {
@@ -24,7 +24,7 @@ public class Booking {
         this.otherGuests = new ArrayList<>(otherGuests);
         this.startDate = startDate;
         this.endDate = endDate;
-        this.typeOfVacation = typeOfVacation;
+        this.bookingIsRecreational = typeOfVacation;
 
         //contructor pro challenge
     }    public Booking(Room room, Guest mainGuest, List<Guest> otherGuests) {
@@ -36,7 +36,7 @@ public class Booking {
         this.otherGuests = new ArrayList<>(otherGuests);
         this.startDate = LocalDate.now();
         this.endDate = this.startDate.plusDays(6);
-        this.typeOfVacation = true;
+        this.bookingIsRecreational = true;
 
     }
 
@@ -84,12 +84,12 @@ public class Booking {
         this.endDate = endDate;
     }
 
-    public boolean isTypeOfVacation() {
-        return typeOfVacation;
+    public boolean isBookingIsRecreational() {
+        return bookingIsRecreational;
     }
 
-    public void setTypeOfVacation(boolean typeOfVacation) {
-        this.typeOfVacation = typeOfVacation;
+    public void setBookingIsRecreational(boolean bookingIsRecreational) {
+        this.bookingIsRecreational = bookingIsRecreational;
     }
 
     public void addOtherGuest(Guest guest){
@@ -106,7 +106,7 @@ public class Booking {
         result += "Datum začátku: " + startDate + "\n";
         result += "Datum konce: " + endDate + "\n";
         result += "Typ dovolené: ";
-        if (typeOfVacation) {   // if (typeOfVacation) {
+        if (bookingIsRecreational) {   // if (typeOfVacation) {
             result += "rekreační";
         } else {
             result += "pracovní";
